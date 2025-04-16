@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiguelFlix</title>
+    <link rel="stylesheet" href=".css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-film"></i>
+                <h1>MiguelFlix</h1>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar filmes...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <nav class="nav">
+                <button class="nav-btn active" data-category="popular">Populares</button>
+                <button class="nav-btn" data-category="top_rated">Melhores Avaliados</button>
+                <button class="nav-btn" data-category="upcoming">Em Breve</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h2 class="section-title" id="section-title">Filmes Populares</h2>
+            <div class="movies-grid" id="movies-grid">
+                <!-- Filmes serão carregados aqui via JavaScript -->
+                <div class="skeleton-movie"></div>
+                <div class="skeleton-movie"></div>
+                <div class="skeleton-movie"></div>
+                <div class="skeleton-movie"></div>
+                <div class="skeleton-movie"></div>
+                <div class="skeleton-movie"></div>
+            </div>
+        </div>
+    </main>
+
+    <div class="movie-modal hidden" id="movie-modal">
+        <div class="modal-content">
+            <button class="close-modal" id="close-modal">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Conteúdo do modal será preenchido via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Desenvolvido para portfólio - Dados fornecidos por TMDB</p>
+            <p>© 2023 CineFlix - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src=".js"></script>
+</body>
+</html>
